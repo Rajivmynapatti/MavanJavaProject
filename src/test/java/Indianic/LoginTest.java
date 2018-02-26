@@ -29,9 +29,10 @@ public class LoginTest extends Browserselection{
 	
 	login.ValidLogin("admin", "demo123");
 	
-	JavascriptExecutor jse=  (JavascriptExecutor)driver;
+	//To send the data in the login text field using JavaScript.
+	/*JavascriptExecutor jse=  (JavascriptExecutor)driver;
 	
-	jse.executeScript("document.getElementById('user_login').value= 'admin';");
+	jse.executeScript("document.getElementById('user_login').value= 'admin';");*/
 		
 	Thread.sleep(3000);
 		}
