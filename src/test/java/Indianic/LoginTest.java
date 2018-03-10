@@ -28,12 +28,7 @@ public class LoginTest extends Browserselection{
 	LoginPages login=PageFactory.initElements(driver, LoginPages.class);
 	login.ValidLogin("tomsmith", "SuperSecretPassword!");
 	System.out.println("User has been successfully login into the website.");
-	//login.ValidLogin("tomsmith", "SuperSecretPassword!");
 	
-	//To send the data in the login text field using JavaScript.
-	/*JavascriptExecutor jse=  (JavascriptExecutor)driver;
-	
-	jse.executeScript("document.getElementById('user_login').value= 'admin';");*/
 		
 	Thread.sleep(3000);
 		}
