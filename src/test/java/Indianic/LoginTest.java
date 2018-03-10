@@ -27,6 +27,7 @@ public class LoginTest extends Browserselection{
 		
 	LoginPages login=PageFactory.initElements(driver, LoginPages.class);
 	login.ValidLogin("tomsmith", "SuperSecretPassword!");
+	System.out.println("User has been successfully login into the website.");
 	//login.ValidLogin("tomsmith", "SuperSecretPassword!");
 	
 	//To send the data in the login text field using JavaScript.
@@ -41,6 +42,7 @@ public class LoginTest extends Browserselection{
 	public void teardown()
 	{
 		driver.quit();
+		System.out.println("Browser has been closed successfully");
 	}
 	
 }
