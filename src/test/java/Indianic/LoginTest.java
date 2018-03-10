@@ -16,18 +16,18 @@ public class LoginTest extends Browserselection{
 	@Test
 	public void Logintest() throws InterruptedException {
 	
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver2.20\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\MyFolder\\drivers\\chromedriver.exe");
 		
 		
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("http://demosite.center/wordpress/wp-login.php");
-		
+		driver.get("https://the-internet.herokuapp.com/login");
+		Thread.sleep(2000);
 		
 	LoginPages login=PageFactory.initElements(driver, LoginPages.class);
-	
-	login.ValidLogin("admin", "demo123");
+	login.ValidLogin("tomsmith", "SuperSecretPassword!");
+	//login.ValidLogin("tomsmith", "SuperSecretPassword!");
 	
 	//To send the data in the login text field using JavaScript.
 	/*JavascriptExecutor jse=  (JavascriptExecutor)driver;

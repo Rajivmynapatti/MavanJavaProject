@@ -10,13 +10,13 @@ public class LoginPages {
 	public LoginPages(WebDriver driver) {
 		this.driver=driver;
 	}
-		@FindBy(id="user_login")
+		@FindBy(id="username")
 		WebElement Username;
 		
-		@FindBy(id="user_pass")
+		@FindBy(id="password")
 		WebElement Password;
 		
-		@FindBy(id="wp-submit")
+		@FindBy(xpath= "//button[@class='radius']")
 		WebElement SubmitButton;
 		
 		
